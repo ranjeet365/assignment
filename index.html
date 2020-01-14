@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div class="topbox">
+         <div class="container">
+            <div class="row">
+               <div class="logo">
+                  <img alt="logo" class="img-responsive logo" src="images/logo.png" />
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="main-container">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12 title">
+                  <h1>Your Recommended Portfolio</h1>
+                  <p>How did we do it?</p>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row services">
+               <div class="col-6 col-sm-2 col-lg-2" id="p1">One <span>Goal Selected</span></div>
+               <div class="col-6 col-sm-2 col-lg-2 col-half-offset" id="p2">9L <span>Target Amount</span></div>
+               <div class="col-6 col-sm-2 col-lg-2 col-half-offset" id="p3">Jun 2032 <span>Target Date</span></div>
+               <div class="col-6 col-sm-2 col-lg-2 col-half-offset" id="p4">SIP <span>Investment Type</span></div>
+               <div class="col-6 col-sm-2 col-lg-2 col-half-offset" id="p5">30,000 <span>Investment needed</span></div>
+            </div>
+         </div>
+         <div class="container info-box">
+            <div class="row">
+               <div class="col-sm-4">
+                  <div class="circle-box targetDiv" id="div1">
+                     <div class="circle">
+                        <div class="text">
+                           <p class="light-blue"> Debt<br/> 50% </p>
+                           <p class="dark-blue"> Equity<br/> 50% </p>
+                        </div>
+                     </div>
+                     <p>Aditya Birla Sun Life Frontline Equity Fund - Growth - Direct Plan(25%) </p>
+                  </div>
+                  <div class="circle-box targetDiv" id="div2" style="display: none;">
+                     <div class="circle">
+                        <div class="text">
+                           <p class="light-blue"> Debt<br/> 50% </p>
+                           <p class="dark-blue"> Equity<br/> 50% </p>
+                        </div>
+                     </div>
+                     <p>Franklin India Prima Fund - Growth - Direct Plan </p>
+                  </div>
+                  <div class="circle-box targetDiv" id="div3" style="display: none;">
+                     <div class="circle">
+                        <div class="text">
+                           <p class="light-blue"> Debt<br/> 50% </p>
+                           <p class="dark-blue"> Equity<br/> 50% </p>
+                        </div>
+                     </div>
+                     <p>ICICI Prudential Bond Fund - Growth - Direct Plan </p>
+                  </div>
+               </div>
+               <div class="col-sm-8 buttons">
+                  <div class="container-box clearfix" title="1">
+                     <div class="box-1">
+                        <p>Aditya Birla Sun Life Frontline Equity Fund - Growth  - Direct Plan</p>
+                        <div class="investment-type"><i class="fas fa-circle light-blue"></i>&nbsp;Large Cap Min</div>
+                        <div class="investment-amt">Investment Amt : 500</div>
+                     </div>
+                     <div class="box-2 amount-1">
+                        10,000 
+                     </div>
+                  </div>
+                  <div class="container-box" title="2">
+                     <div class="box-1">
+                        <p>Franklin India Prima Fund - Growth - Direct Plan</p>
+                        <div class="investment-type"><i class="fas fa-circle light-blue"></i>&nbsp;Mid/small Cap</div>
+                        <div class="investment-amt">Min Investment Amt : 500</div>
+                     </div>
+                     <div class="box-2 amount-2">
+                        10,000 
+                     </div>
+                  </div>
+                  <div class="container-box" title="3">
+                     <div class="box-1">
+                        <p>ICICI Prudential Bond Fund - Growth - Direct Plan</p>
+                        <div class="investment-type"><i class="fas fa-circle dark-blue"></i>&nbsp;Long Term Income/Gilt</div>
+                        <div class="investment-amt">Min. Investment Amt : 500</div>
+                     </div>
+                     <div class="box-2 amount-3">
+                        10,000 
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12 button-box">
+                  <input type="button" class="btn btn-info" value="Start Investing Now">
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script>
+         jQuery(function() {
+         jQuery('.container-box').click(function() {
+         jQuery('.targetDiv').hide();
+         jQuery('#div' + $(this).attr('title')).show();
+         });
+         });
+      </script>
+   </body>
+</html>
